@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #div{
+        width: 200px;
+        height: 200px;
+        border-radius:50%; 
+    }
+    .red{
+        background-color: red;
+    }
+    .blue{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="red" id="div"></div>
+    <script>
+        var a=10;
+        var b=20;
+        //对不对？true：false
+        //a<b?alert('yes'):alert('no');
+        div.onclick=function(){
+            console.log(div.className);
+            div.className=='red'?div.className='blue':div.className='red';
+        }
+    </script>
+</body>
+</html>
