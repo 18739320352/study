@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <input type="date" id="d">
+    <script>
+        var d=document.getElementById('d');
+        var nw=confirm('女性请点击');
+        d.oninput=function(){
+            if(nw&&d.value=='2019-03-08'){
+                alert('妇女节快乐，5折优惠');
+            }else{
+                alert('无优惠');
+            }
+        }
+
+
+
+
+        // var d=document.getElementById('d');
+        // var nw=confirm('是女性顾客吗');
+        // d.oninput=function(){
+        //     d.value=='2019-03-08'&&nw?alert('妇女节快乐，5折优惠'):alert('无优惠')
+        // };
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+<style></style>
+</head>
+<body>
+    输入你的年龄：<input type="text" id="in1" value="" >
+    <button id="btn">打折</button>
+    <div id="show" ></div>
+<script>
+    var in1 = document.getElementById('in1');
+    var btn = document.getElementById('btn');
+     btn.onclick = function(){
+         if(Number(in1.value)<6){
+            alert('不要钱');
+         }else if(Number(in1.value)>81){
+             alert('打五折');
+         }else{
+            alert('正常价');
+         }
+     }
+</script>
+</body>
+</html>

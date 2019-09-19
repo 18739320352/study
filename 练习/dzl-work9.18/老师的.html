@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <input type="text" id="math1" value="">+
+    <input type="text" id="math2" value="">
+    <input type="button" id="btn" value="=">
+    <div id="show"></div>
+    <script>
+        var shu1=document.getElementById('math1');
+        var shu2=document.getElementById('math2');
+        var btn=document.getElementById('btn');
+        btn.onclick=function(){
+            var num1=parseInt(shu1.value);
+            var num2=parseInt(shu2.value);
+            if(isNaN(num1)&&isNaN(num2)){
+                alert('输入数字');
+            } else{
+                show.innerHTML=num1+num2;
+            }
+
+        }
+    </script>
+</body>
+</html>
