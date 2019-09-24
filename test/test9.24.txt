@@ -1,6 +1,7 @@
 #测验
 ##2019年9月24日08:44:07
 ###参与人:杜振雷
+
 1.获取元素的方法有哪些?并简单描述该方法.
 答:1）用id获取元素：document.getElementById();
   2）用标签名获取元素：document.getElementsByTagName();
