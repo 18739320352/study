@@ -24,4 +24,4 @@
    }
    JS:
    var div=document.getElementById("div");
-   div.className="blue";
+   div.className="box blue";
