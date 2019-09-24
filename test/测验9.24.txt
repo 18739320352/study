@@ -1,0 +1,27 @@
+1.获取元素的方法有哪些?并简单描述该方法.
+答:1）用id获取元素：document.getElementById();
+  2）用标签名获取元素：document.getElementsByTagName();
+  3)用类名获取元素：document.getElementsByClassName();
+  4）用选择器获取元素：document.querySelector();
+  
+
+2.如果有10个div元素,在不给元素设置id的情况下如何找到第4个div元素?
+答:var div=document.getElementsByTagName('div');
+   var si=div[3];
+
+3.querySelector()和querySelectorAll()的区别?
+答:前者只获取符合所填选择器的第一个元素。
+  后者获取符合所填选择器的所有元素
+
+4.如何给元素div内增加一个子元素<a href="#">去百度</a>?
+答:var divdocument.getElementById('div');
+  div.innerHTML=<a href="#">去百度</a>;
+
+5.<div class="box red">,在css中box类设定了宽度和高度,red类设定了div的背景颜色.如何通过改变类名blue改变背景颜色,请写出代码?
+答:CSS:
+    .blue{
+      backgrund-color:blue;    
+   }
+   JS:
+   var div=document.getElementById("div");
+   div.className="blue";
