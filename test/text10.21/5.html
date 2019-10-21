@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h5 id="h5"></h5>
+		<script>
+			var h5=document.getElementById('h5');
+			var a=prompt('请输入验证码oASd(不区分大小写)');
+			var b=a.toUpperCase();
+			if(b=='OASD'){
+				h5.innerHTML='正确';
+			}
+			else{
+				h5.innerHTML='验证码错误';
+			}
+		</script>
+	</body>
+</html>
